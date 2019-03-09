@@ -13,6 +13,7 @@
 		D16CB95B22182E2B00C56A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16CB95922182E2B00C56A4F /* Main.storyboard */; };
 		D16CB95D22182E2D00C56A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16CB95C22182E2D00C56A4F /* Assets.xcassets */; };
 		D16CB96022182E2D00C56A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16CB95E22182E2D00C56A4F /* LaunchScreen.storyboard */; };
+		D174A695222C56E6009B2E03 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D174A694222C56E6009B2E03 /* SwipeTableViewController.swift */; };
 		D1ADCDBE2222B86D006B98A2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ADCDBD2222B86D006B98A2 /* CategoryViewController.swift */; };
 		D1C77443222719AE00BC530A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C77442222719AE00BC530A /* Item.swift */; };
 		D1C77445222719BB00BC530A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C77444222719BB00BC530A /* Category.swift */; };
@@ -29,6 +30,7 @@
 		D16CB95C22182E2D00C56A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16CB95F22182E2D00C56A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D16CB96122182E2D00C56A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D174A694222C56E6009B2E03 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		D1ADCDBD2222B86D006B98A2 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		D1C77442222719AE00BC530A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D1C77444222719BB00BC530A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				D1ADCDBD2222B86D006B98A2 /* CategoryViewController.swift */,
 				D16CB95722182E2B00C56A4F /* TodoListViewController.swift */,
+				D174A694222C56E6009B2E03 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,15 +210,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				D1ADCDBE2222B86D006B98A2 /* CategoryViewController.swift in Sources */,
 				D16CB95822182E2B00C56A4F /* TodoListViewController.swift in Sources */,
 				D16CB95622182E2B00C56A4F /* AppDelegate.swift in Sources */,
+				D174A695222C56E6009B2E03 /* SwipeTableViewController.swift in Sources */,
 				D1C77445222719BB00BC530A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26PXP4V49P;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26PXP4V49P;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
